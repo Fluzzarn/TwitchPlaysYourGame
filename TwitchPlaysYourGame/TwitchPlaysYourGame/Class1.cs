@@ -13,6 +13,8 @@ namespace TwitchPlaysYourGame
     {
         private const int port = 6667;
         private static Thread messageThread;
+        private static Thread outputThread;
+        private static Queue<string> messagesToSend = new Queue<string>();
 
 
         private static string _serverAddress;
@@ -20,7 +22,7 @@ namespace TwitchPlaysYourGame
         public static string ServerAddress
         {
             get { return _serverAddress; }
-            private set { _serverAddress = value; }
+            set { _serverAddress = value; }
         }
 
 
@@ -31,6 +33,9 @@ namespace TwitchPlaysYourGame
             get { return _password; }
             set { _password = value; }
         }
+
+
+
         private static string _nickname;
 
         public static string NickName
@@ -58,8 +63,8 @@ namespace TwitchPlaysYourGame
             get { return _buffer; }
            private set { _buffer = value; }
         }
-        
 
+        private static Dictionary<string, int> CommandDictionary = new Dictionary<string, int>();
 
 
         public static bool Connect()
@@ -82,10 +87,40 @@ namespace TwitchPlaysYourGame
             chatWrite.WriteLine("NICK " + _nickname.ToLower());
             chatWrite.Flush();
 
+
+            outputThread = new Thread(() => ChatMessageSendThread(chatWrite));
+            outputThread.Start();
+
             messageThread = new Thread(() => ChatMessageRecievedThread(chatReader, networkStream));
             messageThread.Start();
 
+
+            Console.WriteLine("Connect Succesful!");
             return true;
+        }
+
+        private static void ChatMessageSendThread(StreamWriter chatWrite)
+        {
+            System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
+            timer.Start();
+            while(true)
+            {
+                lock (messagesToSend)
+                {
+                    if(messagesToSend.Count > 0)
+                    {
+                        if(timer.ElapsedMilliseconds > 1500)
+                        {
+                            chatWrite.WriteLine(messagesToSend.Dequeue());
+                            chatWrite.Flush();
+
+                            timer.Stop();
+                            timer.Restart();
+                        }
+                    }
+
+                }
+            }
         }
 
         private static void ChatMessageRecievedThread(StreamReader chatReader, NetworkStream networkStream)
@@ -101,10 +136,78 @@ namespace TwitchPlaysYourGame
                 //part of the successful join message
                 if(_buffer.Split(' ')[1] == "001")
                 {
+                    SendCommand("JOIN #" + _channelName);
+                }
 
+                if(_buffer.Contains("PING :"))
+                {
+                    SendCommand("PONG :tmi.twitch.tv");
+                }
+
+                if(_buffer.Contains("PRIVMSG #"))
+                {
+                    string substringKey = "#" + _channelName + " :";
+                    string userStrippedMsg = _buffer.Substring(_buffer.IndexOf(substringKey) + substringKey.Length);
+
+                    //Console.WriteLine(userStrippedMsg);
+
+                    lock (CommandDictionary)
+                    {
+                        if(CommandDictionary.ContainsKey(userStrippedMsg))
+                        {
+                            CommandDictionary[userStrippedMsg]++;
+                        }
+                        else
+                        {
+                            CommandDictionary.Add(userStrippedMsg,1);
+                        }
+                    }
                 }
 
             }
         }
+
+        private static void SendCommand(string command)
+        {
+            lock (messagesToSend)
+            {
+                messagesToSend.Enqueue(command);
+            }
+        }
+
+        public static string GetMostCommonCommand()
+        {
+
+            string mostCommon = "";
+            int highestAmount = 0;
+            foreach (var item in CommandDictionary)
+            {
+                if(item.Value > highestAmount)
+                {
+                    mostCommon = item.Key;
+                    highestAmount = item.Value;
+                }
+            }
+
+            return mostCommon;
+        }
+
+        public static int GetFrequencyOfCommand(string command)
+        {
+            if(CommandDictionary.ContainsKey(command))
+            {
+                return CommandDictionary[command];
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static void ClearCommands()
+        {
+            CommandDictionary.Clear();
+        }
+
     }
 }
