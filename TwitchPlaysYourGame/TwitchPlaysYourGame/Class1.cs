@@ -217,7 +217,7 @@ namespace TwitchPlaysYourGame
             }
         }
 
-        public static void executeCommand(string command)
+        public static void ExecuteCommand(string command)
         {
             if(CommandFuncDict.ContainsKey(command))
             {

@@ -36,7 +36,7 @@ namespace TwitchPlaysTest
                     string command = TwitchPlays.GetMostCommonCommand();
                     int amount = TwitchPlays.GetFrequencyOfCommand(command);
                     Console.WriteLine("Most common input was: " + command + " with " + amount + " instances");
-                    TwitchPlays.executeCommand(command);
+                    TwitchPlays.ExecuteCommand(command);
                     TwitchPlays.ClearCommands();
                     timer.Reset();
                     timer.Start();
@@ -117,7 +117,7 @@ namespace TwitchPlaysTest
 
         public static void quit()
         {
-            System.Environment.Exit();
+            //System.Environment.Exit();
         }
     }
 }
