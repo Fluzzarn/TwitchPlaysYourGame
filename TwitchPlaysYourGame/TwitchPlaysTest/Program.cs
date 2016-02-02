@@ -26,7 +26,8 @@ namespace TwitchPlaysTest
 
             kappa k = printKapps;
             TwitchPlays.AddCommandToFunction("Kappa",printKapps);
-
+            TwitchPlays.AddCommandToFunction("exit", quit);
+            TwitchPlays.AddCommandToFunction("quit", quit);
             while(true)
             {
                 if(timer.ElapsedMilliseconds > 5000)
@@ -112,6 +113,11 @@ namespace TwitchPlaysTest
                          ,;;'''''''+;                    
                                 ``                       
                                                          ");
+        }
+
+        public static void quit()
+        {
+            System.Environment.Exit();
         }
     }
 }
