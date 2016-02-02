@@ -65,7 +65,7 @@ namespace TwitchPlaysYourGame
         }
 
         private static Dictionary<string, int> CommandDictionary = new Dictionary<string, int>();
-
+        private static Dictionary<string, Delegate> CommandFuncDict = new Dictionary<string, Delegate>();
 
         public static bool Connect()
         {
@@ -209,5 +209,20 @@ namespace TwitchPlaysYourGame
             CommandDictionary.Clear();
         }
 
+        public static void AddCommandToFunction(string command, Action func )
+        {
+            if(!CommandFuncDict.ContainsKey(command))
+            {
+                CommandFuncDict.Add(command, func);
+            }
+        }
+
+        public static void executeCommand(string command)
+        {
+            if(CommandFuncDict.ContainsKey(command))
+            {
+                CommandFuncDict[command].DynamicInvoke();
+            }
+        }
     }
 }
