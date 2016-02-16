@@ -15,7 +15,7 @@ public class TwitchPlays : MonoBehaviour {
         TwitchPlaysYourGame.TwitchPlays.ChannelName = "fluzzarn";
         TwitchPlaysYourGame.TwitchPlays.NickName = "Fluzzarn";
         TwitchPlaysYourGame.TwitchPlays.ServerAddress = "irc.twitch.tv";
-        TwitchPlaysYourGame.TwitchPlays.Password = "oauth:o76kv3vcjltibt5mvdzpyxeh3422ai";
+        TwitchPlaysYourGame.TwitchPlays.Password = "";
 
         TwitchPlaysYourGame.TwitchPlays.Connect();
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("up", MoveUp);
@@ -86,6 +86,6 @@ public class TwitchPlays : MonoBehaviour {
 
      void OnApplicationQuit()
     {
-
+         
     }
 }
