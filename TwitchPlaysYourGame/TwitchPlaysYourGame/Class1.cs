@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 using System.Net.Sockets;
@@ -64,6 +63,17 @@ namespace TwitchPlaysYourGame
            private set { _buffer = value; }
         }
 
+
+
+        private static bool _isRunning;
+
+        public static bool IsRunning
+        {
+            get { return _isRunning; }
+           private set {  _isRunning = value; }
+        }
+        
+
         private static Dictionary<string, int> CommandDictionary = new Dictionary<string, int>();
         private static Dictionary<string, Delegate> CommandFuncDict = new Dictionary<string, Delegate>();
 
@@ -96,6 +106,7 @@ namespace TwitchPlaysYourGame
 
 
             Console.WriteLine("Connect Succesful!");
+            _isRunning = true;
             return true;
         }
 
@@ -103,7 +114,7 @@ namespace TwitchPlaysYourGame
         {
             System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
             timer.Start();
-            while(true)
+            while(_isRunning)
             {
                 lock (messagesToSend)
                 {
@@ -115,7 +126,8 @@ namespace TwitchPlaysYourGame
                             chatWrite.Flush();
 
                             timer.Stop();
-                            timer.Restart();
+                            timer.Reset();
+                            timer.Start();
                         }
                     }
 
@@ -126,7 +138,7 @@ namespace TwitchPlaysYourGame
         private static void ChatMessageRecievedThread(StreamReader chatReader, NetworkStream networkStream)
         {
             
-            while(true)
+            while(_isRunning)
             {
                 if (!networkStream.DataAvailable)
                     continue;
@@ -223,6 +235,11 @@ namespace TwitchPlaysYourGame
             {
                 CommandFuncDict[command].DynamicInvoke();
             }
+        }
+
+        public static void Stop()
+        {
+            _isRunning = false;
         }
     }
 }
