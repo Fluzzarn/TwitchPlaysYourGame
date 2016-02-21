@@ -73,6 +73,17 @@ namespace TwitchPlaysYourGame
            private set { _buffer = value; }
         }
 
+
+
+        private static bool _isRunning;
+
+        public static bool IsRunning
+        {
+            get { return _isRunning; }
+           private set {  _isRunning = value; }
+        }
+        
+
         private static Dictionary<string, int> CommandDictionary = new Dictionary<string, int>();
         private static Dictionary<string, Delegate> CommandFuncDict = new Dictionary<string, Delegate>();
 
@@ -105,6 +116,7 @@ namespace TwitchPlaysYourGame
 
 
             Console.WriteLine("Connect Successful!");
+            _isRunning = true;
             return true;
         }
 
@@ -112,7 +124,7 @@ namespace TwitchPlaysYourGame
         {
             System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
             timer.Start();
-            while(true)
+            while(_isRunning)
             {
                 lock (messagesToSend)
                 {
@@ -145,7 +157,7 @@ namespace TwitchPlaysYourGame
         private static void ChatMessageRecievedThread(StreamReader chatReader, NetworkStream networkStream)
         {
             
-            while(true)
+            while(_isRunning)
             {
                 if (!networkStream.DataAvailable)
                     continue;
@@ -250,6 +262,11 @@ namespace TwitchPlaysYourGame
             SendCommand("PART #" + _channelName);
             messageThread.Abort();
             outputThread.Abort();
+        }
+
+        public static void Stop()
+        {
+            _isRunning = false;
         }
     }
 }
