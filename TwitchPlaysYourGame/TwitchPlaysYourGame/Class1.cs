@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 using System.Net.Sockets;
@@ -55,6 +54,16 @@ namespace TwitchPlaysYourGame
 
         private static string _buffer;
 
+        private static int _TimeBetweenCommands;
+
+        public static int TimeBetweenCommands
+        {
+            get { return _TimeBetweenCommands; }
+            set { _TimeBetweenCommands = value; }
+        }
+
+        private static System.Net.Sockets.TcpClient m_Socket;
+
         /// <summary>
         /// Twitch Chat Stream Buffer
         /// </summary>
@@ -69,16 +78,16 @@ namespace TwitchPlaysYourGame
 
         public static bool Connect()
         {
-            System.Net.Sockets.TcpClient socket = new System.Net.Sockets.TcpClient();
+             m_Socket = new System.Net.Sockets.TcpClient();
 
-            socket.Connect(_serverAddress, port);
-            if(!socket.Connected)
+            m_Socket.Connect(_serverAddress, port);
+            if(!m_Socket.Connected)
             {
                 Console.WriteLine("Connection Failed");
                 return false;
             }
 
-            var networkStream = socket.GetStream();
+            var networkStream = m_Socket.GetStream();
 
             var chatReader = new System.IO.StreamReader(networkStream);
             var chatWrite = new System.IO.StreamWriter(networkStream);
@@ -95,7 +104,7 @@ namespace TwitchPlaysYourGame
             messageThread.Start();
 
 
-            Console.WriteLine("Connect Succesful!");
+            Console.WriteLine("Connect Successful!");
             return true;
         }
 
@@ -109,13 +118,23 @@ namespace TwitchPlaysYourGame
                 {
                     if(messagesToSend.Count > 0)
                     {
+                        //1500 to make sure twitch doesn't time us out
                         if(timer.ElapsedMilliseconds > 1500)
                         {
-                            chatWrite.WriteLine(messagesToSend.Dequeue());
+
+                            string command = messagesToSend.Dequeue();
+                            chatWrite.WriteLine(command);
                             chatWrite.Flush();
 
+                            if(command == "PART #" + _channelName)
+                            {
+                                messageThread.Abort();
+                                outputThread.Abort();
+                            }
+
                             timer.Stop();
-                            timer.Restart();
+                            timer.Reset();
+                            timer.Start();
                         }
                     }
 
@@ -223,6 +242,14 @@ namespace TwitchPlaysYourGame
             {
                 CommandFuncDict[command].DynamicInvoke();
             }
+        }
+
+
+        public static void Disconnect()
+        {
+            SendCommand("PART #" + _channelName);
+            messageThread.Abort();
+            outputThread.Abort();
         }
     }
 }
