@@ -140,8 +140,7 @@ namespace TwitchPlaysYourGame
 
                             if(command == "PART #" + _channelName)
                             {
-                                messageThread.Abort();
-                                outputThread.Abort();
+                                _isRunning = false;
                             }
 
                             timer.Stop();
