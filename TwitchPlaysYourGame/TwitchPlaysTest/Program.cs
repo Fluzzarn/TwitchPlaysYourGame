@@ -117,6 +117,7 @@ namespace TwitchPlaysTest
 
         public static void quit()
         {
+            TwitchPlaysYourGame.TwitchPlays.Disconnect();
             //System.Environment.Exit();
         }
     }

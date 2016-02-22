@@ -151,6 +151,7 @@ namespace TwitchPlaysYourGame
 
                 }
             }
+            Console.WriteLine("MessageThread Ended");
         }
 
         private static void ChatMessageRecievedThread(StreamReader chatReader, NetworkStream networkStream)
@@ -195,6 +196,8 @@ namespace TwitchPlaysYourGame
                 }
 
             }
+            Console.WriteLine("Recieved Thread Ended");
+
         }
 
         private static void SendCommand(string command)
@@ -259,8 +262,6 @@ namespace TwitchPlaysYourGame
         public static void Disconnect()
         {
             SendCommand("PART #" + _channelName);
-            messageThread.Abort();
-            outputThread.Abort();
         }
 
         public static void Stop()

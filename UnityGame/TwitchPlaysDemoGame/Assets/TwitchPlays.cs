@@ -13,17 +13,26 @@ public class TwitchPlays : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         Application.runInBackground = true;
+    }
+
+    void Awake()
+    {
+
         TwitchPlaysYourGame.TwitchPlays.ChannelName = "fluzzarn";
         TwitchPlaysYourGame.TwitchPlays.NickName = "Fluzzarn";
         TwitchPlaysYourGame.TwitchPlays.ServerAddress = "irc.twitch.tv";
         TwitchPlaysYourGame.TwitchPlays.Password = "oauth:b3pyb0j54uhnkxx4yzflntc1g5ocfn";
 
+        TwitchPlaysYourGame.TwitchPlays.Disconnect();
         TwitchPlaysYourGame.TwitchPlays.Connect();
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("up", MoveUp);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("down", MoveDown);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("left", MoveLeft);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("right", MoveRight);
+
+
 
         targetPos = Player.transform.position;
         Invoke("DoCommand", 5);
@@ -51,37 +60,54 @@ public class TwitchPlays : MonoBehaviour
 
     void MoveUp()
     {
-        targetPos += Vector3.up;
-        Player.GetComponent<Animator>().SetTrigger("Up");
-        Player.GetComponent<Animator>().SetBool("IsWalking", true);
         Debug.Log("Up");
+        if (!(GetTile(Vector3.up * 1.5f + Player.transform.position) == TileScript.TileType.WALL))
+        {
+            targetPos += Vector3.up * 1.5f;
+            Player.GetComponent<Animator>().SetTrigger("Up");
+            Player.GetComponent<Animator>().SetBool("IsWalking", true);
+           
+        }
+        
     }
 
     void MoveDown()
     {
-        targetPos += Vector3.down;
-        Player.GetComponent<Animator>().SetBool("IsWalking", true);
-        Player.GetComponent<Animator>().SetTrigger("Down");
+        if (!(GetTile(Vector3.down + Player.transform.position) == TileScript.TileType.WALL))
+        {
+            targetPos += Vector3.down * 1.5f;
+            Player.GetComponent<Animator>().SetBool("IsWalking", true);
+            Player.GetComponent<Animator>().SetTrigger("Down");
 
-        Debug.Log("Down");
+            Debug.Log("Down");
+
+        }
     }
 
     void MoveLeft()
     {
-        targetPos += Vector3.left;
-        Player.GetComponent<Animator>().SetBool("IsWalking", true);
-        Player.GetComponent<Animator>().SetTrigger("Left");
+        if (!(GetTile(Vector3.left + Player.transform.position) == TileScript.TileType.WALL))
+        {
+            targetPos += Vector3.left * 1.5f;
+            Player.GetComponent<Animator>().SetBool("IsWalking", true);
+            Player.GetComponent<Animator>().SetTrigger("Left");
 
-        Debug.Log("Left");
+            Debug.Log("Left");
+
+        }
     }
 
     void MoveRight()
     {
-        targetPos += Vector3.right;
-        Player.GetComponent<Animator>().SetBool("IsWalking", true);
-        Player.GetComponent<Animator>().SetTrigger("Right");
+        if (!(GetTile(Vector3.right + Player.transform.position) == TileScript.TileType.WALL))
+        {
+            targetPos += Vector3.right * 1.5f;
+            Player.GetComponent<Animator>().SetBool("IsWalking", true);
+            Player.GetComponent<Animator>().SetTrigger("Right");
 
-        Debug.Log("Right");
+            Debug.Log("Right");
+
+        }
     }
 
     void DoCommand()
@@ -93,5 +119,24 @@ public class TwitchPlays : MonoBehaviour
         Invoke("DoCommand", 5);
 
     }
+    TileScript.TileType GetTile(Vector2 Pos)
+    {
+        var hit = Physics2D.Raycast(Pos, Vector2.zero);
+
+        if (hit)
+        {
+            GameObject go = hit.transform.gameObject;
+
+            if (go.GetComponent<TileScript>())
+            {
+                var tileComp = go.GetComponent<TileScript>();
+
+                return tileComp.Tile;
+            }
+        }
+
+        return TileScript.TileType.INVALID;
+    }
+
 
 }
