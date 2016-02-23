@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using TwitchPlaysYourGame;
-
+using UnityEngine.UI;
 public class TwitchPlays : MonoBehaviour
 {
 
 
     public GameObject Player;
     public Vector3 targetPos;
-
+    public InputField iField;
 
     // Use this for initialization
     void Start()
@@ -25,6 +25,7 @@ public class TwitchPlays : MonoBehaviour
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("down", MoveDown);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("left", MoveLeft);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("right", MoveRight);
+        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("reset", Reset);
 
         Invoke("DoCommand", 5);
     }
@@ -34,8 +35,8 @@ public class TwitchPlays : MonoBehaviour
         TwitchPlaysYourGame.TwitchPlays.ChannelName = "fluzzarn";
         TwitchPlaysYourGame.TwitchPlays.NickName = "Fluzzarn";
         TwitchPlaysYourGame.TwitchPlays.ServerAddress = "irc.twitch.tv";
-        TwitchPlaysYourGame.TwitchPlays.Password = "oauth:b3pyb0j54uhnkxx4yzflntc1g5ocfn";
-
+        TwitchPlaysYourGame.TwitchPlays.Password = iField.text;
+        iField.text = "";
         TwitchPlaysYourGame.TwitchPlays.Connect();
     }
 
@@ -171,5 +172,11 @@ public class TwitchPlays : MonoBehaviour
         return null;
     }
 
+
+    void Reset()
+    {
+        Player.GetComponent<PlayerScript>().SetRowAndCol(MazeSpawner.PLAYER_ROW, MazeSpawner.PLAYER_COL);
+        targetPos = GetTile(MazeSpawner.PLAYER_ROW, MazeSpawner.PLAYER_COL).transform.position + new Vector3(0,0,-2);
+    }
 
 }

@@ -7,8 +7,8 @@ public class MazeSpawner : MonoBehaviour {
     public const int HEIGHT = 14;
     public const int WIDTH = 16;
 
-    const int PLAYER_ROW = 14;
-    const int PLAYER_COL = 13;
+    public const int PLAYER_ROW = 14;
+    public const int PLAYER_COL = 13;
 
 
     public static int[,] tiles = new int[HEIGHT, WIDTH]
