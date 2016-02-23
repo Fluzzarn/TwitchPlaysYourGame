@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -16,6 +17,9 @@ public class PlayerScript : MonoBehaviour {
     public Direction Dir = Direction.Stopped;
 
     private Vector3 targetPos = Vector3.zero;
+
+    public int Row;
+    public int Col;
 
 	// Use this for initialization
 	void Start () {
@@ -52,6 +56,8 @@ public class PlayerScript : MonoBehaviour {
         //transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * 2);
 	}
 
-
-
+    internal void SetRowAndCol(int v, int col)
+    {
+        Row = v; Col = col;
+    }
 }

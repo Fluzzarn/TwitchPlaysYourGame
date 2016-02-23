@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2f0ba886114177c48b4341b1c3365621
-timeCreated: 1456179175
-licenseType: Pro
+timeCreated: 1456191054
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: ice_path_tileset_by_piacarrot-d6hslib_0
@@ -73,6 +73,7 @@ TextureImporter:
     21300132: ice_path_tileset_by_piacarrot-d6hslib_66
     21300134: ice_path_tileset_by_piacarrot-d6hslib_67
     21300136: ice_path_tileset_by_piacarrot-d6hslib_68
+    21300138: ice_path_tileset_by_piacarrot-d6hslib_69
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -86,7 +87,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -106,11 +107,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -125,9 +127,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_1
       rect:
         serializedVersion: 2
@@ -135,9 +142,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_2
       rect:
         serializedVersion: 2
@@ -145,9 +157,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_3
       rect:
         serializedVersion: 2
@@ -155,9 +172,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_4
       rect:
         serializedVersion: 2
@@ -165,9 +187,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_5
       rect:
         serializedVersion: 2
@@ -175,9 +202,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_6
       rect:
         serializedVersion: 2
@@ -185,9 +217,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_7
       rect:
         serializedVersion: 2
@@ -195,9 +232,14 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_8
       rect:
         serializedVersion: 2
@@ -205,9 +247,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_9
       rect:
         serializedVersion: 2
@@ -215,9 +262,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_10
       rect:
         serializedVersion: 2
@@ -225,9 +277,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_11
       rect:
         serializedVersion: 2
@@ -235,9 +292,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_12
       rect:
         serializedVersion: 2
@@ -245,9 +307,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_13
       rect:
         serializedVersion: 2
@@ -255,9 +322,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_14
       rect:
         serializedVersion: 2
@@ -265,9 +337,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_15
       rect:
         serializedVersion: 2
@@ -275,9 +352,14 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_16
       rect:
         serializedVersion: 2
@@ -285,9 +367,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_17
       rect:
         serializedVersion: 2
@@ -295,9 +382,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_18
       rect:
         serializedVersion: 2
@@ -305,9 +397,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_19
       rect:
         serializedVersion: 2
@@ -315,9 +412,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_20
       rect:
         serializedVersion: 2
@@ -325,9 +427,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_21
       rect:
         serializedVersion: 2
@@ -335,9 +442,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_22
       rect:
         serializedVersion: 2
@@ -345,9 +457,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_23
       rect:
         serializedVersion: 2
@@ -355,9 +472,14 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_24
       rect:
         serializedVersion: 2
@@ -365,9 +487,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_25
       rect:
         serializedVersion: 2
@@ -375,9 +502,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_26
       rect:
         serializedVersion: 2
@@ -385,9 +517,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_27
       rect:
         serializedVersion: 2
@@ -395,9 +532,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_28
       rect:
         serializedVersion: 2
@@ -405,9 +547,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_29
       rect:
         serializedVersion: 2
@@ -415,9 +562,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_30
       rect:
         serializedVersion: 2
@@ -425,9 +577,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_31
       rect:
         serializedVersion: 2
@@ -435,9 +592,14 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_32
       rect:
         serializedVersion: 2
@@ -445,9 +607,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -16}
+        - {x: 2, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_33
       rect:
         serializedVersion: 2
@@ -455,9 +622,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 16}
+        - {x: -2, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_34
       rect:
         serializedVersion: 2
@@ -465,9 +637,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_35
       rect:
         serializedVersion: 2
@@ -475,9 +652,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_36
       rect:
         serializedVersion: 2
@@ -485,9 +667,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_37
       rect:
         serializedVersion: 2
@@ -495,9 +682,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_38
       rect:
         serializedVersion: 2
@@ -505,9 +697,14 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_39
       rect:
         serializedVersion: 2
@@ -515,9 +712,15 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 2}
+        - {x: 2, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_40
       rect:
         serializedVersion: 2
@@ -525,9 +728,14 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 2}
+        - {x: -16, y: 2}
     - name: ice_path_tileset_by_piacarrot-d6hslib_41
       rect:
         serializedVersion: 2
@@ -535,9 +743,15 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 16}
+        - {x: -16, y: 2}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_42
       rect:
         serializedVersion: 2
@@ -545,9 +759,14 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_43
       rect:
         serializedVersion: 2
@@ -555,9 +774,14 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_44
       rect:
         serializedVersion: 2
@@ -565,9 +789,14 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_45
       rect:
         serializedVersion: 2
@@ -575,9 +804,14 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_46
       rect:
         serializedVersion: 2
@@ -585,9 +819,14 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_47
       rect:
         serializedVersion: 2
@@ -595,9 +834,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_48
       rect:
         serializedVersion: 2
@@ -605,9 +849,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_49
       rect:
         serializedVersion: 2
@@ -615,9 +864,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_50
       rect:
         serializedVersion: 2
@@ -625,9 +879,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_51
       rect:
         serializedVersion: 2
@@ -635,9 +894,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_52
       rect:
         serializedVersion: 2
@@ -645,9 +909,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_53
       rect:
         serializedVersion: 2
@@ -655,9 +924,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_54
       rect:
         serializedVersion: 2
@@ -665,9 +939,14 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_55
       rect:
         serializedVersion: 2
@@ -675,9 +954,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_56
       rect:
         serializedVersion: 2
@@ -685,9 +969,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_57
       rect:
         serializedVersion: 2
@@ -695,9 +984,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_58
       rect:
         serializedVersion: 2
@@ -705,9 +999,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_59
       rect:
         serializedVersion: 2
@@ -715,9 +1014,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_60
       rect:
         serializedVersion: 2
@@ -725,9 +1029,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_61
       rect:
         serializedVersion: 2
@@ -735,9 +1044,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_62
       rect:
         serializedVersion: 2
@@ -745,9 +1059,14 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_63
       rect:
         serializedVersion: 2
@@ -755,9 +1074,14 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_64
       rect:
         serializedVersion: 2
@@ -765,9 +1089,14 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_65
       rect:
         serializedVersion: 2
@@ -775,9 +1104,14 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_66
       rect:
         serializedVersion: 2
@@ -785,9 +1119,14 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_67
       rect:
         serializedVersion: 2
@@ -795,9 +1134,14 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ice_path_tileset_by_piacarrot-d6hslib_68
       rect:
         serializedVersion: 2
@@ -805,9 +1149,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

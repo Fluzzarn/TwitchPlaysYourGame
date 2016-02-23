@@ -262,9 +262,11 @@ namespace TwitchPlaysYourGame
         public static void Disconnect()
         {
             SendCommand("PART #" + _channelName);
+            _isRunning = false;
+            m_Socket.Close();
         }
 
-        public static void Stop()
+        public static void PauseInput()
         {
             _isRunning = false;
         }

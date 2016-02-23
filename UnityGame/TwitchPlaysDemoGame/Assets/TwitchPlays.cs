@@ -20,22 +20,23 @@ public class TwitchPlays : MonoBehaviour
     void Awake()
     {
 
-        TwitchPlaysYourGame.TwitchPlays.ChannelName = "fluzzarn";
-        TwitchPlaysYourGame.TwitchPlays.NickName = "Fluzzarn";
-        TwitchPlaysYourGame.TwitchPlays.ServerAddress = "irc.twitch.tv";
-        TwitchPlaysYourGame.TwitchPlays.Password = "oauth:b3pyb0j54uhnkxx4yzflntc1g5ocfn";
 
-        TwitchPlaysYourGame.TwitchPlays.Disconnect();
-        TwitchPlaysYourGame.TwitchPlays.Connect();
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("up", MoveUp);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("down", MoveDown);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("left", MoveLeft);
         TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("right", MoveRight);
 
-
-
-        targetPos = Player.transform.position;
         Invoke("DoCommand", 5);
+    }
+
+    public void Connect()
+    {
+        TwitchPlaysYourGame.TwitchPlays.ChannelName = "fluzzarn";
+        TwitchPlaysYourGame.TwitchPlays.NickName = "Fluzzarn";
+        TwitchPlaysYourGame.TwitchPlays.ServerAddress = "irc.twitch.tv";
+        TwitchPlaysYourGame.TwitchPlays.Password = "oauth:b3pyb0j54uhnkxx4yzflntc1g5ocfn";
+
+        TwitchPlaysYourGame.TwitchPlays.Connect();
     }
 
     void OnApplicationQuit()
@@ -56,60 +57,97 @@ public class TwitchPlays : MonoBehaviour
             Player.GetComponent<Animator>().SetBool("IsWalking", false);
         }
 
+
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            MoveDown();
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            MoveLeft();
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            MoveUp();
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            MoveRight();
+        }
     }
 
     void MoveUp()
     {
-        Debug.Log("Up");
-        if (!(GetTile(Vector3.up * 1.5f + Player.transform.position) == TileScript.TileType.WALL))
+        var tile = GetTile(Player.GetComponent<PlayerScript>().Row, Player.GetComponent<PlayerScript>().Col + 1).GetComponent<TileScript>();
+        Move("Up", 0, 1, tile);
+
+        if (tile.Tile == TileScript.TileType.ICE)
         {
-            targetPos += Vector3.up * 1.5f;
-            Player.GetComponent<Animator>().SetTrigger("Up");
-            Player.GetComponent<Animator>().SetBool("IsWalking", true);
-           
+            MoveUp();
         }
-        
+
+
+
+
     }
 
     void MoveDown()
     {
-        if (!(GetTile(Vector3.down + Player.transform.position) == TileScript.TileType.WALL))
+        var tile = GetTile(Player.GetComponent<PlayerScript>().Row , Player.GetComponent<PlayerScript>().Col - 1).GetComponent<TileScript>();
+        Debug.Log(tile.Tile);
+        Move("Down", 0, -1, tile);
+
+        if (tile.Tile == TileScript.TileType.ICE)
         {
-            targetPos += Vector3.down * 1.5f;
-            Player.GetComponent<Animator>().SetBool("IsWalking", true);
-            Player.GetComponent<Animator>().SetTrigger("Down");
-
-            Debug.Log("Down");
-
+            MoveDown();
         }
     }
 
     void MoveLeft()
     {
-        if (!(GetTile(Vector3.left + Player.transform.position) == TileScript.TileType.WALL))
+        var tile = GetTile(Player.GetComponent<PlayerScript>().Row -1, Player.GetComponent<PlayerScript>().Col).GetComponent<TileScript>();
+        Move("Left", -1, 0, tile);
+
+        if (tile.Tile == TileScript.TileType.ICE)
         {
-            targetPos += Vector3.left * 1.5f;
-            Player.GetComponent<Animator>().SetBool("IsWalking", true);
-            Player.GetComponent<Animator>().SetTrigger("Left");
-
-            Debug.Log("Left");
-
+            MoveLeft();
         }
     }
 
     void MoveRight()
     {
-        if (!(GetTile(Vector3.right + Player.transform.position) == TileScript.TileType.WALL))
+
+        var tile = GetTile(Player.GetComponent<PlayerScript>().Row + 1, Player.GetComponent<PlayerScript>().Col).GetComponent<TileScript>();
+        Move("Right", 1,0, tile);
+
+        if (tile.Tile == TileScript.TileType.ICE)
         {
-            targetPos += Vector3.right * 1.5f;
-            Player.GetComponent<Animator>().SetBool("IsWalking", true);
-            Player.GetComponent<Animator>().SetTrigger("Right");
-
-            Debug.Log("Right");
-
+            MoveRight();
         }
     }
 
+
+
+    void Move(string dir, int RowMod,int ColMod, TileScript tile)
+    {
+        if (!(tile.Tile == TileScript.TileType.WALL))
+        {
+            targetPos = tile.transform.position + new Vector3(0,0,-2);
+
+            Player.GetComponent<PlayerScript>().Row = Player.GetComponent<PlayerScript>().Row + RowMod;
+            Player.GetComponent<PlayerScript>().Col = Player.GetComponent<PlayerScript>().Col + ColMod;
+
+            Player.GetComponent<Animator>().SetBool("IsWalking", true);
+            Player.GetComponent<Animator>().SetTrigger(dir);
+
+            Debug.Log(dir);
+
+        }
+
+    }
     void DoCommand()
     {
         Debug.Log("Command");
@@ -119,23 +157,18 @@ public class TwitchPlays : MonoBehaviour
         Invoke("DoCommand", 5);
 
     }
-    TileScript.TileType GetTile(Vector2 Pos)
+    GameObject GetTile(int row, int col)
     {
-        var hit = Physics2D.Raycast(Pos, Vector2.zero);
-
-        if (hit)
+        
+        if (row >= 0 && col >= 0)
         {
-            GameObject go = hit.transform.gameObject;
-
-            if (go.GetComponent<TileScript>())
+            if (col < MazeSpawner.HEIGHT && row <= MazeSpawner.WIDTH)
             {
-                var tileComp = go.GetComponent<TileScript>();
-
-                return tileComp.Tile;
+                return MazeSpawner.TileObjects[col][row];
             }
         }
 
-        return TileScript.TileType.INVALID;
+        return null;
     }
 
 
