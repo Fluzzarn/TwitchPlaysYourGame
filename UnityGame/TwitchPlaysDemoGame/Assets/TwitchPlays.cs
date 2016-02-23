@@ -21,11 +21,7 @@ public class TwitchPlays : MonoBehaviour
     {
 
 
-        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("up", MoveUp);
-        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("down", MoveDown);
-        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("left", MoveLeft);
-        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("right", MoveRight);
-        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("reset", Reset);
+
 
         Invoke("DoCommand", 5);
     }
@@ -38,6 +34,13 @@ public class TwitchPlays : MonoBehaviour
         TwitchPlaysYourGame.TwitchPlays.Password = iField.text;
         iField.text = "";
         TwitchPlaysYourGame.TwitchPlays.Connect();
+
+        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("up", MoveUp);
+        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("down", MoveDown);
+        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("left", MoveLeft);
+        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("right", MoveRight);
+        TwitchPlaysYourGame.TwitchPlays.AddCommandToFunction("reset", Reset);
+        Debug.Log("Attempted to Connect");
     }
 
     void OnApplicationQuit()
