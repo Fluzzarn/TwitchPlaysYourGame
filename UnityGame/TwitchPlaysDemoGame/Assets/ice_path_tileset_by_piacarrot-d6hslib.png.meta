@@ -1,0 +1,814 @@
+fileFormatVersion: 2
+guid: 2f0ba886114177c48b4341b1c3365621
+timeCreated: 1456179175
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ice_path_tileset_by_piacarrot-d6hslib_0
+    21300002: ice_path_tileset_by_piacarrot-d6hslib_1
+    21300004: ice_path_tileset_by_piacarrot-d6hslib_2
+    21300006: ice_path_tileset_by_piacarrot-d6hslib_3
+    21300008: ice_path_tileset_by_piacarrot-d6hslib_4
+    21300010: ice_path_tileset_by_piacarrot-d6hslib_5
+    21300012: ice_path_tileset_by_piacarrot-d6hslib_6
+    21300014: ice_path_tileset_by_piacarrot-d6hslib_7
+    21300016: ice_path_tileset_by_piacarrot-d6hslib_8
+    21300018: ice_path_tileset_by_piacarrot-d6hslib_9
+    21300020: ice_path_tileset_by_piacarrot-d6hslib_10
+    21300022: ice_path_tileset_by_piacarrot-d6hslib_11
+    21300024: ice_path_tileset_by_piacarrot-d6hslib_12
+    21300026: ice_path_tileset_by_piacarrot-d6hslib_13
+    21300028: ice_path_tileset_by_piacarrot-d6hslib_14
+    21300030: ice_path_tileset_by_piacarrot-d6hslib_15
+    21300032: ice_path_tileset_by_piacarrot-d6hslib_16
+    21300034: ice_path_tileset_by_piacarrot-d6hslib_17
+    21300036: ice_path_tileset_by_piacarrot-d6hslib_18
+    21300038: ice_path_tileset_by_piacarrot-d6hslib_19
+    21300040: ice_path_tileset_by_piacarrot-d6hslib_20
+    21300042: ice_path_tileset_by_piacarrot-d6hslib_21
+    21300044: ice_path_tileset_by_piacarrot-d6hslib_22
+    21300046: ice_path_tileset_by_piacarrot-d6hslib_23
+    21300048: ice_path_tileset_by_piacarrot-d6hslib_24
+    21300050: ice_path_tileset_by_piacarrot-d6hslib_25
+    21300052: ice_path_tileset_by_piacarrot-d6hslib_26
+    21300054: ice_path_tileset_by_piacarrot-d6hslib_27
+    21300056: ice_path_tileset_by_piacarrot-d6hslib_28
+    21300058: ice_path_tileset_by_piacarrot-d6hslib_29
+    21300060: ice_path_tileset_by_piacarrot-d6hslib_30
+    21300062: ice_path_tileset_by_piacarrot-d6hslib_31
+    21300064: ice_path_tileset_by_piacarrot-d6hslib_32
+    21300066: ice_path_tileset_by_piacarrot-d6hslib_33
+    21300068: ice_path_tileset_by_piacarrot-d6hslib_34
+    21300070: ice_path_tileset_by_piacarrot-d6hslib_35
+    21300072: ice_path_tileset_by_piacarrot-d6hslib_36
+    21300074: ice_path_tileset_by_piacarrot-d6hslib_37
+    21300076: ice_path_tileset_by_piacarrot-d6hslib_38
+    21300078: ice_path_tileset_by_piacarrot-d6hslib_39
+    21300080: ice_path_tileset_by_piacarrot-d6hslib_40
+    21300082: ice_path_tileset_by_piacarrot-d6hslib_41
+    21300084: ice_path_tileset_by_piacarrot-d6hslib_42
+    21300086: ice_path_tileset_by_piacarrot-d6hslib_43
+    21300088: ice_path_tileset_by_piacarrot-d6hslib_44
+    21300090: ice_path_tileset_by_piacarrot-d6hslib_45
+    21300092: ice_path_tileset_by_piacarrot-d6hslib_46
+    21300094: ice_path_tileset_by_piacarrot-d6hslib_47
+    21300096: ice_path_tileset_by_piacarrot-d6hslib_48
+    21300098: ice_path_tileset_by_piacarrot-d6hslib_49
+    21300100: ice_path_tileset_by_piacarrot-d6hslib_50
+    21300102: ice_path_tileset_by_piacarrot-d6hslib_51
+    21300104: ice_path_tileset_by_piacarrot-d6hslib_52
+    21300106: ice_path_tileset_by_piacarrot-d6hslib_53
+    21300108: ice_path_tileset_by_piacarrot-d6hslib_54
+    21300110: ice_path_tileset_by_piacarrot-d6hslib_55
+    21300112: ice_path_tileset_by_piacarrot-d6hslib_56
+    21300114: ice_path_tileset_by_piacarrot-d6hslib_57
+    21300116: ice_path_tileset_by_piacarrot-d6hslib_58
+    21300118: ice_path_tileset_by_piacarrot-d6hslib_59
+    21300120: ice_path_tileset_by_piacarrot-d6hslib_60
+    21300122: ice_path_tileset_by_piacarrot-d6hslib_61
+    21300124: ice_path_tileset_by_piacarrot-d6hslib_62
+    21300126: ice_path_tileset_by_piacarrot-d6hslib_63
+    21300128: ice_path_tileset_by_piacarrot-d6hslib_64
+    21300130: ice_path_tileset_by_piacarrot-d6hslib_65
+    21300132: ice_path_tileset_by_piacarrot-d6hslib_66
+    21300134: ice_path_tileset_by_piacarrot-d6hslib_67
+    21300136: ice_path_tileset_by_piacarrot-d6hslib_68
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ice_path_tileset_by_piacarrot-d6hslib_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_67
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ice_path_tileset_by_piacarrot-d6hslib_68
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
